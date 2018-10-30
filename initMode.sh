@@ -1,5 +1,7 @@
-#!/bin/bash
-for pin in 0 1 2 3; do
-gpio mode $pin out
-gpio write $pin 0
+#! /bin/bash
+
+for ((i=3; i<7; i++));
+do
+    gpio mode $i out
+    gpio write $i 0
 done

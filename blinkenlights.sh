@@ -1,6 +1,8 @@
-#!/bin/bash
-while :
+#! /bin/bash
+
+while true :
 do
-./setbits.sh $RANDOM
-sleep 0.25
+    temp=$(($RANDOM % 16))
+    ./setbits.sh $temp
+    sleep .25
 done
